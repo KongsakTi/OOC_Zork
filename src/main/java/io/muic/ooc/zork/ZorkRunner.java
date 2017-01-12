@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * @author gigadot
  */
-public class ChatBotRunner {
+public class ZorkRunner {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
