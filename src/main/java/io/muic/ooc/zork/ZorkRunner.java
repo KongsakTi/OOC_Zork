@@ -1,4 +1,6 @@
-package io.muic.ooc.chatbot;
+package io.muic.ooc.zork;
+
+import io.muic.ooc.zork.ZorkGame;
 
 import java.util.Scanner;
 
@@ -10,17 +12,8 @@ import java.util.Scanner;
 public class ZorkRunner {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        boolean quit = false;
-        System.out.println("Zork: Hello, I am Mr. Bot.");
-        while (!quit) {
-            System.out.print("You: ");
-            String name = scanner.nextLine();
-            quit = name.equals("quit");
-            if (!quit) {
-                System.out.println("Zork: " + name);
-            }
-        }
+        ZorkGame zorkGame = new ZorkGame();
+        zorkGame.start();
     }
 
 }
